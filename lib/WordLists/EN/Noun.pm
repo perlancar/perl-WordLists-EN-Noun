@@ -15,4 +15,6 @@ package WordLists::EN::Noun;
 
 L<TablesCollection::Words::EN::Nouns>
 
+L<WordLists::EN::Adjective>, L<WordLists::EN::Adverb>
+
 L<WordList>
