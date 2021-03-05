@@ -1,3 +1,10 @@
+0.002   2021-03-05  Released-By: PERLANCAR; Urgency: low
+
+	- No functional changes.
+
+	- [doc] Mention WordLists::EN::Adjective, WordLists::EN::Adverb.
+
+
 0.001   2021-03-05  Released-By: PERLANCAR
 
         - First release.
