@@ -1,3 +1,5 @@
+# no code
+## no critic: TestingAndDebugging::RequireUseStrict
 package WordLists::EN::Noun;
 
 # AUTHORITY
@@ -16,8 +18,6 @@ This distribution contains the following wordlist modules:
 
 
 =head1 SEE ALSO
-
-L<TablesCollection::Words::EN::Nouns>
 
 L<WordLists::EN::Adjective>, L<WordLists::EN::Adverb>
 

@@ -1,10 +1,5 @@
 package WordList::EN::Noun::TalkEnglish;
 
-# AUTHORITY
-# DATE
-# DIST
-# VERSION
-
 use strict;
 use warnings;
 use WordList;
@@ -12,6 +7,11 @@ our @ISA = qw(WordList);
 
 use Role::Tiny::With;
 with 'WordListRole::FromArray';
+
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
 
 sub _array {
     require Tables::Words::EN::Nouns::TalkEnglish;
