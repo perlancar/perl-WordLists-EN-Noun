@@ -44,6 +44,8 @@ Source: L<https://www.talkenglish.com/vocabulary/top-1500-nouns.aspx>
 
 =head1 SEE ALSO
 
+L<TableData::Lingua::Word::EN::Noun::TalkEnglish>
+
 L<WordList::EN::Adjective::TalkEnglish>, L<WordList::EN::Adverb::TalkEnglish>.
 
 Other C<WordList::EN::Noun::*> modules.
