@@ -19,6 +19,8 @@ This distribution contains the following wordlist modules:
 
 =head1 SEE ALSO
 
+L<TableDataBundle::Lingua::Word::EN::Noun>
+
 L<WordLists::EN::Adjective>, L<WordLists::EN::Adverb>
 
 L<WordList>
