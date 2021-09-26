@@ -3,22 +3,29 @@ package WordList::EN::Noun::TalkEnglish;
 use strict;
 use warnings;
 use WordList;
-our @ISA = qw(WordList);
-
-use Role::Tiny::With;
-with 'WordListRole::FromArray';
 
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
-sub _array {
-    require Tables::Words::EN::Nouns::TalkEnglish;
+our @ISA = qw(WordList);
 
-    my $t = Tables::Words::EN::Nouns::TalkEnglish->new;
+use Role::Tiny::With;
+with 'WordListRole::FromArray';
+
+sub _array {
+    require TableData::Lingua::Word::EN::Noun::TalkEnglish;
+
+    my $t = TableData::Lingua::Word::EN::Noun::TalkEnglish->new;
     my $ary = [];
-    while (my $row = $t->get_row_arrayref) { push @$ary, $row->[0] }
+    $t->each_row_arrayref(
+        sub {
+            my $row = shift;
+            push @$ary, $row->[0];
+            1;
+        }
+    );
     $ary;
 }
 
